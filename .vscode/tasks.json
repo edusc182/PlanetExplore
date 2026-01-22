@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run PlanetGenerator",
+			"type": "shell",
+			"command": "javac Planet.java PlanetGenerator.java && java PlanetGenerator",
+			"args": [],
+			"group": "build",
+			"problemMatcher": []
+		}
+	]
+}

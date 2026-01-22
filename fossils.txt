@@ -1,0 +1,69 @@
+--- FOSSIL RECORD ---
+timestamp: 2026-01-11T03:03:33.2554196
+planetName: Cryodora-519
+planetType: Desert
+atmosphere: Nitrogen
+age: 10
+health: 0
+attributes: Heat Resistance,Fire Breath,adaptive,Swimming,strong-sense,
+
+--- FOSSIL RECORD ---
+timestamp: 2026-01-13T18:54:40.2968525
+planetName: Astramir-926
+planetType: Lava
+atmosphere: Carbon monoxide
+age: 2
+health: 0
+cause: PlanetCrisis
+attributes: Water Conservation,Sand Burrower,Toxic Resistance,
+totalDamageTaken: 128
+mutationCount: 0
+
+--- FOSSIL RECORD ---
+timestamp: 2026-01-13T18:54:40.3378772
+planetName: Astramir-926
+planetType: Lava
+atmosphere: Carbon monoxide
+age: 2
+health: 0
+cause: PlanetCrisis
+attributes: Swimming,Gills,quick-learner,
+totalDamageTaken: 120
+mutationCount: 1
+
+--- FOSSIL RECORD ---
+timestamp: 2026-01-13T19:34:29.4021681
+planetName: Terratune-530
+planetType: Desert
+atmosphere: Nitrogen
+age: 4
+health: 0
+cause: Competition_Duel
+attributes: Antifreeze Blood,Blubber,strong-sense,fragile,
+totalDamageTaken: 108
+mutationCount: 4
+
+--- FOSSIL RECORD ---
+timestamp: 2026-01-13T19:36:41.0159728
+planetName: Veganix-867
+planetType: Ocean
+atmosphere: Oxygen-rich
+age: 5
+health: 0
+cause: Competition_Duel
+attributes: Climbing,Leaf Camouflage,Methane Breather,High Endurance,
+totalDamageTaken: 110
+mutationCount: 5
+
+--- FOSSIL RECORD ---
+timestamp: 2026-01-22T10:18:52.2256272
+planetName: Astralith-836
+planetType: Ocean
+atmosphere: Carbon monoxide
+age: 9
+health: 0
+cause: Competition_Duel
+attributes: Mire Grip,Buoyant,Camouflage Algae,Amphibious Respiration,adaptive,Toxic Resistance,agile,Heat Resistance,Swimming,strong-sense,
+totalDamageTaken: 117
+mutationCount: 6
+
