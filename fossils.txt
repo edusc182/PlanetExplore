@@ -67,3 +67,27 @@ attributes: Mire Grip,Buoyant,Camouflage Algae,Amphibious Respiration,adaptive,T
 totalDamageTaken: 117
 mutationCount: 6
 
+--- FOSSIL RECORD ---
+timestamp: 2026-01-22T11:23:05.0977155
+planetName: Astratune-318
+planetType: Ocean
+atmosphere: Oxygen-rich
+age: 9
+health: 0
+cause: Competition_Duel
+attributes: Water Conservation,Sand Burrower,Heat Tolerance,Night Vision,Toxic Resistance,strong-sense,
+totalDamageTaken: 140
+mutationCount: 0
+
+--- FOSSIL RECORD ---
+timestamp: 2026-01-22T11:23:05.1137183
+planetName: Astratune-318
+planetType: Desert
+atmosphere: Nitrogen
+age: 1
+health: 0
+cause: PlanetCrisis
+attributes: Swimming,Gills,Salt Tolerance,Pressure Resistance,High Endurance,
+totalDamageTaken: 138
+mutationCount: 0
+

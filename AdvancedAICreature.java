@@ -8,13 +8,12 @@ import java.util.Arrays;
  */
 public class AdvancedAICreature extends AICreature {
     
-    // Enums for strict type definitions
-    public enum Locomotion { SWIMMING, CRAWLING, BIPEDAL, QUADRUPEDAL, FLYING }
+    // Gender enum for strict type definitions
     public enum Gender { MALE, FEMALE }
 
     // Physical attributes
     private Gender gender;
-    private Locomotion locomotion;
+    // Note: locomotion field is inherited from AICreature
     private String skinType;        // Skin, scales, feathers, chitin
     private String color;
     private String shape;           // Body shape
@@ -34,7 +33,7 @@ public class AdvancedAICreature extends AICreature {
      * @param baseHeight Base height in meters
      * @param initialSkills Skill/trait array
      */
-    public AdvancedAICreature(Locomotion startLocomotion, String skinType, String baseColor, 
+    public AdvancedAICreature(AICreature.Locomotion startLocomotion, String skinType, String baseColor, 
                               String shape, double baseWeight, double baseHeight, String[] initialSkills) {
         // Initialize parent with skills
         super(initialSkills);
@@ -61,7 +60,6 @@ public class AdvancedAICreature extends AICreature {
 
     // Getters for physical attributes
     public Gender getGender() { return gender; }
-    public Locomotion getLocomotion() { return locomotion; }
     public String getSkinType() { return skinType; }
     public String getColor() { return color; }
     public String getShape() { return shape; }
@@ -70,7 +68,6 @@ public class AdvancedAICreature extends AICreature {
 
     // Setters for evolution/adaptation
     public void setGender(Gender gender) { this.gender = gender; }
-    public void setLocomotion(Locomotion locomotion) { this.locomotion = locomotion; }
     public void setSkinType(String skinType) { this.skinType = skinType; }
     public void setColor(String color) { this.color = color; }
     public void setShape(String shape) { this.shape = shape; }

@@ -4,7 +4,11 @@ import java.util.List;
 import java.util.Random;
 
 public class AICreature {
+    // Enum for locomotion types (used by AdvancedAICreature and triggerPlanetaryCataclysm)
+    public enum Locomotion { SWIMMING, CRAWLING, BIPEDAL, QUADRUPEDAL, FLYING }
+    
     private String[] attributes;
+    protected Locomotion locomotion = null;  // protected so AdvancedAICreature can access it
     private int age = 0;
     private double mutationChance = 0.25; // base chance to mutate each tick
     private int health = 100;
@@ -110,6 +114,22 @@ public class AICreature {
      */
     public void rechargeAdaptive() {
         this.adaptiveCharges = 2;
+    }
+
+    /**
+     * Get the locomotion type of this creature (if set).
+     * @return Locomotion type or null if not set
+     */
+    public Locomotion getLocomotion() {
+        return locomotion;
+    }
+
+    /**
+     * Set the locomotion type for this creature.
+     * @param newLocomotion The new locomotion type
+     */
+    public void setLocomotion(Locomotion newLocomotion) {
+        this.locomotion = newLocomotion;
     }
 
     public void incrementStableAndMaybeHeal() {

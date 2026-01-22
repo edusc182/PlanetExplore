@@ -4,3 +4,5 @@ id,timestamp,planetName,planetType,atmosphere,finalAge,cause,geneticCode,surviva
 3,2026-01-13T19:34:29.4021681,Terratune-530,Desert,Nitrogen,4,Competition_Duel,G2-A4-M4-D108-ANTIFR-BLUBBE-STRONG,Antifreeze Blood;Blubber;strong-sense;fragile,108,4
 4,2026-01-13T19:36:41.0159728,Veganix-867,Ocean,Oxygen-rich,5,Competition_Duel,G2-A5-M5-D110-CLIMBI-LEAFCA-METHAN,Climbing;Leaf Camouflage;Methane Breather;High Endurance,110,5
 5,2026-01-22T10:18:52.2256272,Astralith-836,Ocean,Carbon monoxide,9,Competition_Duel,G2-A9-M6-D117-MIREGR-BUOYAN-CAMOUF,Mire Grip;Buoyant;Camouflage Algae;Amphibious Respiration;adaptive;Toxic Resistance;agile;Heat Resistance;Swimming;strong-sense,117,6
+6,2026-01-22T11:23:05.0977155,Astratune-318,Ocean,Oxygen-rich,9,Competition_Duel,G1-A9-M0-D140-H0-AC2-WATERC-SANDBU-HEATTO,Water Conservation;Sand Burrower;Heat Tolerance;Night Vision;Toxic Resistance;strong-sense,140,0
+7,2026-01-22T11:23:05.1137183,Astratune-318,Desert,Nitrogen,1,PlanetCrisis,G3-A1-M0-D138-H0-AC2-SWIMMI-GILLS-SALTTO,Swimming;Gills;Salt Tolerance;Pressure Resistance;High Endurance,138,0
