@@ -1,0 +1,23 @@
+{
+  "creature": {
+    "geneticCode": "G2-A0-M0-D0-H100-AC2-INTELL-TOOLUS",
+    "lineageId": 2,
+    "age": 0,
+    "health": 100,
+    "physical": {
+      "weight": 45.0,
+      "height": 1.6,
+      "scaleX": 0.9,
+      "scaleY": 1.6,
+      "scaleZ": 0.9,
+      "gender": "MALE",
+      "locomotion": "BIPEDAL",
+      "skinType": "Fur",
+      "color": "Orange"
+    },
+    "traits": [
+      "Intelligence",
+      "Tool Use"
+    ]
+  }
+}

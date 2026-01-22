@@ -1,0 +1,23 @@
+# Creature Batch Export
+# Total creatures: 5
+
+File: creature_1_gen0.obj
+  Code: G1-A0-M0-D0-H100-AC2-GILLS-SWIMMI-SALTTO
+  Type: SWIMMING
+
+File: creature_2_gen0.obj
+  Code: G2-A0-M0-D0-H100-AC2-INTELL-TOOLUS
+  Type: BIPEDAL
+
+File: creature_3_gen0.obj
+  Code: G3-A0-M0-D0-H100-AC2-BEAK-SHARPV
+  Type: FLYING
+
+File: creature_4_gen0.obj
+  Code: G4-A0-M0-D0-H100-AC2-CLAWS-PACKHU
+  Type: QUADRUPEDAL
+
+File: creature_5_gen0.obj
+  Code: G5-A0-M0-D0-H100-AC2-ARMORP-BURROW
+  Type: CRAWLING
+
