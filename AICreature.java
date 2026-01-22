@@ -63,7 +63,8 @@ public class AICreature {
 
     /**
      * Generate a compact genetic code string for quick lineage tracking.
-     * Example: G3-A5-M2-D40-HEAT-ADAPT
+     * Example: G3-A5-M2-D40-H85-AC1-HEAT-ADAPT
+     * Format: G{lineage}-A{age}-M{mutations}-D{damage}-H{health}-AC{adaptiveCharges}-{traits}
      */
     public String getGeneticCode() {
         StringBuilder sb = new StringBuilder();
@@ -71,6 +72,8 @@ public class AICreature {
         sb.append("-A").append(age);
         sb.append("-M").append(mutationCount);
         sb.append("-D").append(totalDamageTaken);
+        sb.append("-H").append(health);
+        sb.append("-AC").append(adaptiveCharges);
 
         // include up to first three attribute tokens (shortened)
         for (int i = 0; i < Math.min(3, attributes.length); i++) {

@@ -6,15 +6,29 @@ import java.util.Random;
 public class CreatureEvolutionManager {
 
     private final Random random;
+    private final double mutationChance;
 
     public CreatureEvolutionManager(Random random) {
+        this(random, 0.25); // default 25% mutation chance
+    }
+
+    public CreatureEvolutionManager(Random random, double mutationChance) {
         this.random = random;
+        this.mutationChance = mutationChance;
     }
 
     // Example pools of possible attributes for mutation/training
     private static final String[] POSITIVE_TRAITS = {"adaptive", "resilient", "quick-learner", "strong-sense", "agile"};
     private static final String[] NEGATIVE_TRAITS = {"fragile", "slow-reaction", "forgetful", "weak-sense"};
     private static final String[] SKILL_LEVELS = {"level:1", "level:2", "level:3", "level:4", "level:5"};
+
+    /**
+     * Get the mutation chance probability configured for this manager.
+     * @return mutationChance value (e.g., 0.25 for 25%)
+     */
+    public double getMutationChance() {
+        return mutationChance;
+    }
 
     /**
      * Updates a list of AICreature objects by applying training and mutation logic.
@@ -35,11 +49,17 @@ public class CreatureEvolutionManager {
         for (AICreature creature : creatures) {
             System.out.println("Processing: " + creature.toString());
 
+            // Increment age
+            creature.incrementAge();
+
             // Apply training based on some simulated condition
             applyTraining(creature);
 
-            // Let the creature handle its own probabilistic mutation (age+environment)
-            creature.tickAndMaybeMutate(random, planetType, atmosphere);
+            // Apply mutation with configured probability
+            if (random.nextDouble() < mutationChance) {
+                applyMutation(creature);
+            }
+
             System.out.println("After update: " + creature.toString());
         }
         System.out.println("--- Evolution Cycle Finished ---\n");
