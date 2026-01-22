@@ -91,3 +91,27 @@ attributes: Swimming,Gills,Salt Tolerance,Pressure Resistance,High Endurance,
 totalDamageTaken: 138
 mutationCount: 0
 
+--- FOSSIL RECORD ---
+timestamp: 2026-01-22T11:25:27.1200846
+planetName: Pyralon-125
+planetType: Ice
+atmosphere: Nitrogen
+age: 8
+health: 0
+cause: Competition_Duel
+attributes: Cliff Climbing,Thick Fur,High Altitude Lung,Rock Camouflage,Low Oxygen Tolerance,Methane Breather,strong-sense,agile,
+totalDamageTaken: 112
+mutationCount: 0
+
+--- FOSSIL RECORD ---
+timestamp: 2026-01-22T11:26:05.8081497
+planetName: Zyramir-234
+planetType: Ocean
+atmosphere: Carbon monoxide
+age: 9
+health: 0
+cause: Competition_Duel
+attributes: Swimming,Gills,Salt Tolerance,Pressure Resistance,High Endurance,thick-skin,thick-skin,
+totalDamageTaken: 144
+mutationCount: 0
+

@@ -1,5 +1,5 @@
-import java.util.Random;
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  * Advanced AI Creature extending AICreature with physical attributes,

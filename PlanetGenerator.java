@@ -396,6 +396,50 @@ public class PlanetGenerator {
         AssetManager assetManager = new AssetManager(assetList);
         Scene scene = new Scene();
         scene.loadAssets(assetManager);
+        
+        // NEW: Render visual representations of all surviving creatures
+        renderCreaturesInScene();
+    }
+
+    /**
+     * NEW: Render all player creatures with their visual traits applied.
+     * This bridges the gap between creature genetics and visual representation.
+     * For base AICreature instances without physical data, uses default representations.
+     */
+    public void renderCreaturesInScene() {
+        System.out.println("\n=== VISUAL RENDERING PHASE ===");
+        System.out.println("Rendering " + playerCreatures.size() + " creatures for the scene...\n");
+        
+        CreatureRenderer renderer = new CreatureRenderer();
+        
+        for (int i = 0; i < playerCreatures.size(); i++) {
+            AICreature creature = playerCreatures.get(i);
+            
+            // Render AdvancedAICreature instances with full physical data
+            if (creature instanceof AdvancedAICreature) {
+                AdvancedAICreature advCreature = (AdvancedAICreature) creature;
+                
+                // Create a game object for this creature
+                String objectName = "Creature_" + advCreature.getLineageId() + "_Gen" + advCreature.getAge();
+                GameObject3D gameObject = new GameObject3D(objectName);
+                
+                // Apply visual traits
+                renderer.applyVisualTraits(advCreature, gameObject);
+            } else {
+                // For base AICreature, render with default AdvancedAICreature conversion
+                // This allows visualization of creatures even if they're not fully advanced
+                System.out.println("--- Rendering Base Creature: " + creature.getGeneticCode() + " (Basic Model) ---");
+                String objectName = "Creature_" + creature.getLineageId() + "_Gen" + creature.getAge();
+                GameObject3D gameObject = new GameObject3D(objectName);
+                gameObject.setColor(java.awt.Color.GRAY);
+                gameObject.setScale(1.0f, 1.0f, 1.0f);
+                gameObject.setTexture("texture_default.png");
+                gameObject.setAnimation("Idle");
+                System.out.println("   > Using default visual representation.\n");
+            }
+        }
+        
+        System.out.println("=== VISUAL RENDERING COMPLETE ===\n");
     }
 
     public static void main(String[] args) {
